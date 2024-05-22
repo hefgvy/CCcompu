@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kawtar Ghailan El Aouad">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{display: flex;justify-content: center;}
+        #retícula{display: grid;grid-template-columns: 1fr 1fr 1fr;width: 90vw;align-items: center;}
+        img{width: 22vw;height: 22vw;margin: 2vw;object-fit: cover;}
+        audio{width: 22vw;}
+        .elemento{text-align: center;}
+        @media screen and (max-width:600px){
+            #retícula{grid-template-columns: 1fr;}
+            img{width: 60vw;height: 60vw;}
+            audio{width: 60vw;}
+        }
+    </style>
+</head>
+<body>
+    <div id="retícula">
+        <div class="elemento">
+            <img src="Images/lastchristmas.jpeg" onclick="playSound1()">
+            <audio src="Audios/audio1.mp3" id="audio1" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Images/caramell.jpeg" onclick="playSound2()">
+            <audio src="Audios/audio2.mp3" id="audio2" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Images/temperature.jpeg" onclick="playSound3()">
+            <audio src="Audios/audio3.mp3" id="audio3" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Images/ctangana.jpeg" onclick="playSound4()">
+            <audio src="Audios/audio4.mp3" id="audio4" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Images/deadtome.jpeg" onclick="playSound5()">
+            <audio src="Audios/audio5.mp3" id="audio5" controls loop></audio>
+        </div>
+        <div class="elemento">
+            <img src="Images/hypnoticdata.jpeg" onclick="playSound6()">
+            <audio src="Audios/audio6.mp3" id="audio6" controls loop></audio>
+        </div>
+        <script>
+            function playSound1(){
+            let audio=document.getElementById("audio1");
+            if (audio.paused) audio.play();
+            else audio.pause();
+            }
+            function playSound2(){
+            let audio=document.getElementById("audio2");
+            if (audio.paused) audio.play();
+            else audio.pause();
+            }
+            function playSound3(){
+            let audio=document.getElementById("audio3");
+            if (audio.paused) audio.play();
+            else audio.pause();
+            }
+            function playSound4(){
+            let audio=document.getElementById("audio4");
+            if (audio.paused) audio.play();
+            else audo.pause();
+            }
+            function playSound5(){
+            let audio=document.getElementById("audio5");
+            if (audio.paused) audio.play();
+            else audio.pause();
+            }
+            function playSound6(){
+            let audio=document.getElementById("audio6");
+            if (audio.paused) audio.play();
+            else audio.pause();
+            }
+        </script>
+    </div>
+</body>
+</html>

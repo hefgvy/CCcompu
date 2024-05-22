@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kawtar Ghailan El Aouad">
+    <title>Kawtar.2.15</title>
+</head>
+<style>
+    body{margin: 0;display: flex;justify-content: center;}
+    .contenedor{display: grid;grid-template-columns: 1fr 1fr 1fr;}
+    img{width: 25vw;height: 25vw;object-fit: cover;margin: 1vw;}
+    @media screen and (max-width:600px){
+    div{grid-template-columns:1fr 1fr}}
+    .maria{width: 25vw;height: 25vw;background-color: rgb(120, 223, 188);margin: 2vw;transform: rotate(15deg);}
+</style>
+<body>
+    <div class="contenedor">
+        <img src="Images/im1.jpg" style="width: 52vw;grid-column: 1/3;">
+        <img src="Images/im2.jpg" alt="">
+        <div class="maria">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, perferendis dolorum? Consequuntur ut consectetur sed facere, ab a nihil, illo officiis vero numquam laudantium repellat dolorem! Velit facilis nisi libero!</p>
+        </div>
+        <img src="Images/im4.jpg" style="width: 54vw;grid-column: 2/4;">
+        <img src="Images/im5.jpg" style="width: 83vw;height: 30vw;grid-column: 1/4;">
+        <img src="Images/im6.jpg" alt="">
+        <img src="Images/im7.jpg" alt="">
+        <img src="Images/im8.png" alt="">
+        <img src="Images/im9.jpg" style="width: 50vw;grid-column: 1/3;">
+        <div><b><p style="width: 25vw;height: 25vw;margin: 0;">Prueba de layout utilizando CSS grid. Kawtar Ghailan.</p></b></div>
+    </div>
+</body>
+</html>
